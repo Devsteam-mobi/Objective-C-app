@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+        <array key="Lato-Semibold.ttf">
+            <string>Lato-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="BuyItemsCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="BuyItemsCell" rowHeight="145" id="R6b-bW-R6V" customClass="BuyItemsCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R6b-bW-R6V" id="sYQ-lQ-QrT">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="144"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSQ-Ie-JbN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="144"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sd6-3h-Lqf">
+                        <rect key="frame" x="55" y="0.0" width="265" height="144"/>
+                        <constraints>
+                            <constraint firstAttribute="width" priority="250" constant="47" id="xFh-jg-gJ6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccX-PM-PcW">
+                        <rect key="frame" x="327" y="60" width="33" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="cCY-g1-vMB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="sd6-3h-Lqf" firstAttribute="top" secondItem="sYQ-lQ-QrT" secondAttribute="top" id="IlY-Yd-cjC"/>
+                    <constraint firstAttribute="trailing" secondItem="ccX-PM-PcW" secondAttribute="trailing" constant="15" id="blj-oM-ssw"/>
+                    <constraint firstAttribute="trailing" secondItem="sd6-3h-Lqf" secondAttribute="trailing" constant="55" id="lbg-Rl-yTr"/>
+                    <constraint firstItem="sd6-3h-Lqf" firstAttribute="centerY" secondItem="ccX-PM-PcW" secondAttribute="centerY" id="oo5-Lw-Xh9"/>
+                    <constraint firstAttribute="bottom" secondItem="sd6-3h-Lqf" secondAttribute="bottom" id="w5D-8F-9D9"/>
+                    <constraint firstItem="sd6-3h-Lqf" firstAttribute="leading" secondItem="sYQ-lQ-QrT" secondAttribute="leading" constant="55" id="wh7-ZK-PIJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="lessLabel" destination="ccX-PM-PcW" id="I1l-X4-4Sq"/>
+                <outlet property="selectButton" destination="kSQ-Ie-JbN" id="hiN-me-wKO"/>
+                <outlet property="titlelabel" destination="sd6-3h-Lqf" id="6cp-0M-EHh"/>
+            </connections>
+            <point key="canvasLocation" x="28.5" y="-45.5"/>
+        </tableViewCell>
+    </objects>
+</document>

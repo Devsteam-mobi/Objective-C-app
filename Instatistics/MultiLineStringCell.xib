@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MultiLineStringCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="MultiLineStringCell" rowHeight="145" id="R6b-bW-R6V" customClass="MultiLineStringCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R6b-bW-R6V" id="sYQ-lQ-QrT">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="144"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gk7-08-VPb">
+                        <rect key="frame" x="57" y="0.0" width="261" height="144.5"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="20"/>
+                        <color key="textColor" red="0.58431372549019611" green="0.76470588235294112" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gk7-08-VPb" firstAttribute="top" secondItem="sYQ-lQ-QrT" secondAttribute="top" id="3nM-Ug-LUj"/>
+                    <constraint firstItem="gk7-08-VPb" firstAttribute="leading" secondItem="sYQ-lQ-QrT" secondAttribute="leading" constant="57" id="CM7-SC-TSi"/>
+                    <constraint firstAttribute="trailing" secondItem="gk7-08-VPb" secondAttribute="trailing" constant="57" id="nN8-fn-ek7"/>
+                    <constraint firstAttribute="bottom" secondItem="gk7-08-VPb" secondAttribute="bottom" id="wK3-76-jRN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="infoLabel" destination="gk7-08-VPb" id="0wY-68-033"/>
+            </connections>
+            <point key="canvasLocation" x="28.5" y="-45.5"/>
+        </tableViewCell>
+    </objects>
+</document>

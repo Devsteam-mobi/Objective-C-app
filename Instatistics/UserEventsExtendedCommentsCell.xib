@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="UserEventsExtendedCommentsCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserEventsExtendedCommentsCell" rowHeight="145" id="R6b-bW-R6V" customClass="UserEventsExtendedCommentsCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R6b-bW-R6V" id="sYQ-lQ-QrT">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="144.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnG-mb-3N7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="144"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q3V-Tx-Mze">
+                        <rect key="frame" x="30" y="35" width="72" height="72"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6B3-qC-K9a">
+                        <rect key="frame" x="120" y="10" width="225" height="124.5"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fsS-kw-RXj">
+                        <rect key="frame" x="71" y="143" width="304" height="1"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6B3-qC-K9a" firstAttribute="leading" secondItem="sYQ-lQ-QrT" secondAttribute="leading" constant="120" id="6d4-Tj-b3R"/>
+                    <constraint firstAttribute="bottom" secondItem="6B3-qC-K9a" secondAttribute="bottom" constant="10" id="fdi-CZ-1bJ"/>
+                    <constraint firstAttribute="trailing" secondItem="6B3-qC-K9a" secondAttribute="trailing" constant="30" id="nQD-dM-MvG"/>
+                    <constraint firstItem="6B3-qC-K9a" firstAttribute="top" secondItem="sYQ-lQ-QrT" secondAttribute="top" constant="10" id="plL-0X-v2g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="postTextLabel" destination="6B3-qC-K9a" id="J8U-G7-1J1"/>
+                <outlet property="selectButton" destination="UnG-mb-3N7" id="GQS-Zg-foF"/>
+                <outlet property="separatorImage" destination="fsS-kw-RXj" id="5oq-V1-slP"/>
+                <outlet property="userImage" destination="Q3V-Tx-Mze" id="Wao-kh-jUo"/>
+            </connections>
+            <point key="canvasLocation" x="28.5" y="-45.5"/>
+        </tableViewCell>
+    </objects>
+</document>

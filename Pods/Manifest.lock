@@ -1,0 +1,44 @@
+PODS:
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - CCBottomRefreshControl (0.5.2)
+  - FBSDKCoreKit (4.19.0):
+    - Bolts (~> 1.7)
+  - ImoDynamicTableView (2.4.0)
+  - Realm (2.4.2):
+    - Realm/Headers (= 2.4.2)
+  - Realm/Headers (2.4.2)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SVProgressHUD (2.1.2)
+  - YandexMobileMetrica (2.7.0):
+    - YandexMobileMetrica/Static (= 2.7.0)
+  - YandexMobileMetrica/Static (2.7.0)
+
+DEPENDENCIES:
+  - CCBottomRefreshControl
+  - FBSDKCoreKit (~> 4.19)
+  - ImoDynamicTableView
+  - Realm (~> 2.1)
+  - SDWebImage (~> 3.8)
+  - SVProgressHUD
+  - YandexMobileMetrica (= 2.7.0)
+
+SPEC CHECKSUMS:
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  CCBottomRefreshControl: 389780b4488321c91d18f66a6da5ef9606df6de5
+  FBSDKCoreKit: 894b2b6eda6a4c8c4204e92e59cc355709ef045c
+  ImoDynamicTableView: 8f873e988144dc35b6d20101a972b88e5c3572c1
+  Realm: d27b758e12d62a3371879a065d4c40aa212c5a54
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  YandexMobileMetrica: c8e9050cd23b10dee4358bdf0a5142583a63995c
+
+PODFILE CHECKSUM: f8b9b96a95d7d81b2188b85222e15d6f15ae6f15
+
+COCOAPODS: 1.0.1

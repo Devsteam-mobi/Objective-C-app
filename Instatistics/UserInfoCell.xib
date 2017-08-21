@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Black.ttf">
+            <string>Lato-Black</string>
+        </array>
+        <array key="Lato-LightItalic.ttf">
+            <string>Lato-LightItalic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="UserInfoCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserInfoCell" rowHeight="145" id="R6b-bW-R6V" customClass="UserInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R6b-bW-R6V" id="sYQ-lQ-QrT">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUGENIU GULICA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rha-So-Oij">
+                        <rect key="frame" x="20" y="14" width="335" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="clz-cP-8J6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~descrierea profilului~" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORv-3e-gDg">
+                        <rect key="frame" x="20" y="36" width="335" height="16"/>
+                        <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://vsco.co/eugeniugulica" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ca0-Hi-C3E">
+                        <rect key="frame" x="20" y="55.5" width="335" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="250" constant="16" id="qBR-AZ-71W"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ORv-3e-gDg" firstAttribute="top" secondItem="rha-So-Oij" secondAttribute="bottom" id="0qr-bf-NGe"/>
+                    <constraint firstAttribute="trailing" secondItem="rha-So-Oij" secondAttribute="trailing" constant="20" id="Dot-0K-Quq"/>
+                    <constraint firstAttribute="trailing" secondItem="ORv-3e-gDg" secondAttribute="trailing" constant="20" id="H5R-by-0i2"/>
+                    <constraint firstItem="ORv-3e-gDg" firstAttribute="leading" secondItem="sYQ-lQ-QrT" secondAttribute="leading" constant="20" id="JrD-CV-hS5"/>
+                    <constraint firstItem="Ca0-Hi-C3E" firstAttribute="leading" secondItem="sYQ-lQ-QrT" secondAttribute="leading" constant="20" id="MF9-wd-or1"/>
+                    <constraint firstItem="rha-So-Oij" firstAttribute="top" secondItem="sYQ-lQ-QrT" secondAttribute="top" constant="14" id="PF4-Th-LTH"/>
+                    <constraint firstItem="Ca0-Hi-C3E" firstAttribute="top" secondItem="ORv-3e-gDg" secondAttribute="bottom" constant="3.5" id="d2Y-By-fwO"/>
+                    <constraint firstAttribute="trailing" secondItem="Ca0-Hi-C3E" secondAttribute="trailing" constant="20" id="jn9-1j-e7C"/>
+                    <constraint firstItem="rha-So-Oij" firstAttribute="leading" secondItem="sYQ-lQ-QrT" secondAttribute="leading" constant="20" id="nPb-jc-LrE"/>
+                    <constraint firstAttribute="bottom" secondItem="Ca0-Hi-C3E" secondAttribute="bottom" constant="13" id="sb3-Z4-HEH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.44352877140045166" green="0.69213849306106567" blue="0.90055114030838013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="ORv-3e-gDg" id="pT6-01-NZd"/>
+                <outlet property="nameLabel" destination="rha-So-Oij" id="Tmu-GB-mgd"/>
+                <outlet property="urlLabel" destination="Ca0-Hi-C3E" id="Boy-g6-8Tx"/>
+            </connections>
+            <point key="canvasLocation" x="28.5" y="-45.5"/>
+        </tableViewCell>
+    </objects>
+</document>
